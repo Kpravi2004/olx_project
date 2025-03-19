@@ -1,0 +1,148 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Left Arrow Styling */
+.back-arrow {
+    position: absolute;
+    top: 15px;
+    left: 20px;  /* Moves arrow to left */
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000; /* Ensures it's above all elements */
+    transition: color 0.3s ease-in-out;
+}
+
+.back-arrow:hover {
+    color: #ffcc00; /* Changes color on hover */
+}
+
+/* Login Page Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.input-group label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: 5px;
+    font-size: 12px;
+    color: #ffcc00;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+    background: #ffdb4d;
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.register-link a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
